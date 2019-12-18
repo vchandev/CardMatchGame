@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title>Zoovu Card Matching Game</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+<div>
+  <center>
+  <h1>Zoovu Card Matching Game</h1>
+  </center>
+</div>
+  
+<div id="timer">
+  <center>
+  <label id="minutes">00</label>
+  <label id="colon">:</label>
+  <label id="seconds">00</label>   
+  </center>
+</div>
+  
+  <p>
+    <button class="btn red" onclick="init()">Reset Game</button>
+  </p>
+
+
+<div id="content">
+
+  <div id="cardPile"> </div>
+  <div id="cardSlots"> </div>
+
+  <div id="successMessage">
+    <h2>Congratulations!</h2>
+    <button onclick="init()">Play Again</button>
+  </div>
+
+</div>
+
+</body>
+</html>
+
